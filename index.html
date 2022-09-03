@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="card.css" />
+    <title>Document</title>
+</head>
+<body>
+        <nav id="top_navbar">
+            <h1 id="project_logo_name">NETFLIX</h1>
+            <div id="dropdown">
+                <label for="toggle-dropdown" id="dropdown-button"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" name="" id="toggle-dropdown">
+                <div id="vertical-dropdown">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">TV Shows</a></p>
+                    <p><a href="#">Movies</a></p>
+                    <p><a href="#">Trending</a></p>
+                    <p><a href="#">My List</a></li>
+                </div>
+            </div>
+            <ul id="nav_preferences">
+            <a href="#">
+                <li class="preferences">Home</li>
+            </a>
+            <a href="#">
+                <li class="preferences">TV Shows</li>
+            </a>
+            <a href="#">
+                <li class="preferences">Movies</li>
+            </a>
+            <a href="#">
+                <li class="preferences">Trending</li>
+            </a>
+            <a href="#">
+                <li class="preferences">My List</li>
+            </a>
+            <a href="#">
+                <li id="responsive_spare_ele" class="preferences"></li>
+            </a>
+            </ul>
+            <form id="for_navsearch">
+            <input type="text" name="search" placeholder="Search...." />
+            </form>
+            <div id="side_icons">
+            <a href="#">
+                <img
+                src="https://s2.svgbox.net/octicons.svg?ic=gift&color=white"
+                width="28"
+                height="28"
+                alt=""
+                />
+            </a>
+            <div id="user-control">
+                <label for="show-button">
+                <img
+                    id="user_navbar"
+                    src="https://s2.svgbox.net/materialui.svg?ic=face&color=grey"
+                    width="28"
+                    height="28"
+                    alt=""
+                />
+                </label>
+                <input type="checkbox" id="show-button" style="display: none;">
+                <div id="user-display">
+                <div>
+                    <img
+                    id="user1"
+                    src="https://s2.svgbox.net/materialui.svg?ic=face&color=black"
+                    width="28"
+                    height="28"
+                    alt=""
+                />
+                <a>User 1</a>
+                </div>
+                <div>
+                    <img
+                    id="user2"
+                    src="https://s2.svgbox.net/materialui.svg?ic=face&color=black"
+                    width="28"
+                    height="28"
+                    alt=""
+                />
+                <a>User 2</a>
+                    </div>
+                <hr>
+                <a href="" style="color: white;"><div>Manage Account</div></a>
+                <a href="" style="color: white;"><div>Profile</div></a>
+                <a href="" style="color: white;"><div>Sign Out</div></a>
+                </div>
+            </div>
+            <a href="">
+                <img
+                src="https://s2.svgbox.net/hero-outline.svg?ic=adjustments&color=white"
+                width="28"
+                height="28"
+                alt=""
+                />
+            </a>
+            </div>
+        </nav>
+
+<!-- Main Content -->
+    <div id="card-container">
+        <div class="card" style="background-image:url(images/S-W.jpg)">
+            <div class="card-content">
+                <div class="logo-container">
+                    <img class="logo" src="https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABXURwJOxrQ65DCB9qLq4XMUQqDXvJEgxlKPVFmixBZVGMMIm2ntHP0fSgNzZA9epg8Re85xj2nE4GnIfFnux1b99rypxWgCaPMe_Mytf4CPec5pblLPkmXUS2Zqm3HTnPo_mEgX1MKt5K2xioly_cxOofv18-c122JMJoHMz5aA6tQ.png?r=654">
+                </div>
+                <div class="details-container">
+                    <h1 id="title">Stranger Things</h1>
+                    <div id="title-info">
+                    <p class="grey-effect">2016 | &nbsp;<button class="box-surround">16+</button>&nbsp; | 3 Seasons | Sci-Fi TV</p>
+                </div>
+                <div id="details">
+                    <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                </div>
+                <div id="buttons-container">
+                    <button id="btn1" class="btn"><i class="fas fa-play" style="font-size: 0.9rem;"></i> &nbsp;PLAY</button>
+                    <button id="btn2" class="btn"><i class="fas fa-plus" style="font-size: 1rem;"></i> &nbsp;MY LIST</button>
+                </div>
+                <div id="actor-details">
+                    <p><span class="grey-effect">Starring:</span> Winona Ryder,David Harbour,Finn Wolfhard <br> <span class="grey-effect">Creators:</span> The Duffer Brothers</p>
+                </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div id="videos-section">
+        <h1 id="header">Videos</h1>
+        <div id="videos-container">
+            <div class="video-card">
+                <div id="video-1" class="video"></div>
+                <p class="video-text">Stranger Things 3 (Trailer)</p>
+                <div id="play-content">
+                    <i class="fas fa-play-circle" id="play-button" onclick="playTrailer(0, 'trailer-1', 'closeTrailer-1')"></i>
+                </div>
+            </div>
+            <div class="video-card">
+                <div id="video-2" class="video"></div>
+                <p class="video-text">Stranger Things 2 (Trailer)</p>
+                <div id="play-content">
+                    <i class="fas fa-play-circle" id="play-button" onclick="playTrailer(1, 'trailer-2', 'closeTrailer-2')"></i>
+                </div>
+            </div>
+            <div class="video-card">
+                <div id="video-3" class="video"></div>
+                <p class="video-text">Stranger Things 1 (Trailer)</p>
+                <div id="play-content">
+                    <i class="fas fa-play-circle" onclick="playTrailer(2, 'trailer-3', 'closeTrailer-3')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For trailers -->
+    <div class="trailerContainer">
+        <video src="trailers/3.mp4" controls id="trailer-1"></video>
+        <img src="images/close.png" alt="" id="closeTrailer-1" class="closeButton">
+    </div>
+    <div class="trailerContainer">
+        <video src="trailers/2.mp4" controls id="trailer-2"></video>
+        <img src="images/close.png" alt="" id="closeTrailer-2" class="closeButton">
+    </div>
+    <div class="trailerContainer">
+        <video src="trailers/1.mp4" controls id="trailer-3"></video>
+        <img src="images/close.png" alt="" id="closeTrailer-3" class="closeButton">
+    </div>
+
+    <div id="episodes-section">
+        <h1 id="header">Episodes</h1>
+        <div id="episodes-container">
+            <div id="episode-card">
+                <div class="episode" id="episode-1"></div>
+                <h3 class="episode-heading">1. Chapter One: The Vanishing of Will Byers</h3>
+                <span class="episode-content">On his way home from a friend's house, young Will sees something terrifying. Nearby, a sinister secret lurks in the depths of a government lab.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-2"></div>
+                <h3 class="episode-heading">2. Chapter Two: The Weirdo on Maple Street</h3>
+                <span class="episode-content">Lucas, Mike and Dustin try to talk to the girl they found in the woods. Hopper questions an anxious Joyce about an unsettling phone call.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-3"></div>
+                <h3 class="episode-heading">3. Chapter Three: Holly, Jolly</h3>
+                <span class="episode-content">An increasingly concerned Nancy looks for Barb and finds out what Jonathan's been up to. Joyce is convinced Will is trying to talk to her.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-4"></div>
+                <h3 class="episode-heading">4. Chapter Four: The Body</h3>
+                <span class="episode-content">Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover. Nancy and Jonathan form an unlikely alliance.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-5"></div>
+                <h3 class="episode-heading">5. Chapter One: The Vanishing of Will Byers</h3>
+                <span class="episode-content">On his way home from a friend's house, young Will sees something terrifying. Nearby, a sinister secret lurks in the depths of a government lab.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-6"></div>
+                <h3 class="episode-heading">6. Chapter Two: The Weirdo on Maple Street</h3>
+                <span class="episode-content">Lucas, Mike and Dustin try to talk to the girl they found in the woods. Hopper questions an anxious Joyce about an unsettling phone call.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-7"></div>
+                <h3 class="episode-heading">7. Chapter Three: Holly, Jolly</h3>
+                <span class="episode-content">An increasingly concerned Nancy looks for Barb and finds out what Jonathan's been up to. Joyce is convinced Will is trying to talk to her.</span>
+            </div>
+            <div id="episode-card">
+                <div class="episode" id="episode-8"></div>
+                <h3 class="episode-heading">8. Chapter Four: The Body</h3>
+                <span class="episode-content">Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover. Nancy and Jonathan form an unlikely alliance.</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="songs-section">
+        <h1 id="header">SoundTrack</h1>
+        <div id="songs-container">
+            <div class="songs-card">
+                <div id="song-1" class="song"></div>
+                <p class="song-text">Theme Song (C418 REMIX)</p>
+                <div id="play-content">
+                    <div class="tooltip">info
+                        <span class="tooltiptext">Click to Play, Double Click to Pause</span>
+                    </div>
+                    <i class="fas fa-play-circle" id="play-button" onclick="playSong('soundtrack-1')" ondblclick="pauseSong('soundtrack-1')"></i></div>
+            </div>
+            <div class="songs-card">
+                <div id="song-1" class="song"></div>
+                <p class="song-text">The Upside Down</p>
+                <div id="play-content">
+                    <div class="tooltip">info
+                        <span class="tooltiptext">Click to Play, Double Click to Pause</span>
+                    </div>
+                    <i class="fas fa-play-circle" id="play-button" onclick="playSong('soundtrack-2')" ondblclick="pauseSong('soundtrack-2')"></i></div>
+            </div>
+            <div class="songs-card">
+                <div id="song-1" class="song"></div>
+                <p class="song-text">Boys and Girls</p>
+                <div id="play-content">
+                    <div class="tooltip">info
+                        <span class="tooltiptext">Click to Play, Double Click to Pause</span>
+                    </div>
+                    <i class="fas fa-play-circle" id="play-button" onclick="playSong('soundtrack-3')" ondblclick="pauseSong('soundtrack-3')"></i></div>
+            </div>
+            <div class="songs-card">
+                <div id="song-1" class="song"></div>
+                <p class="song-text">Blank Makes You Crazy</p>
+                <div id="play-content">
+                    <div class="tooltip">info
+                        <span class="tooltiptext">Click to Play, Double Click to Pause</span>
+                    </div>
+                    <i class="fas fa-play-circle" id="play-button" onclick="playSong('soundtrack-4')" ondblclick="pauseSong('soundtrack-4')"></i></div>
+            </div>
+        </div>
+    </div>
+
+<!-- Seperator -->
+<div style="width: 100%; border-top: 5px solid #1f1f1f; margin-top: 1rem;" ></div>
+
+<!-- Originals -->
+    <div id="originals">
+        <h1>More Originals</h1>
+        <div id="cards-container">
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQds4HE0aj10Z6D6qvdNxpLvfg0i2m1kv2hr-a9xzSM8bQU-wdQe2Clew25L0njT5lvy1yrKaQzFcrAewunHIcImhbdJkkwx1PuxQBgZGOmyll1EGZwYlBzcNPhnhw.jpg?r=6e3);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV4t_2jZy2YoG6eqLDrcQKdMRyhk4IpArEhM_IvgLe4iFhflA2lYhNIMks0d_eetbc626eNUCIRsTgcCmfPg054XKnvzg3rurjsx3XNcv72pRTDXsG-Afrtlu_YP0Q.jpg?r=a44);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV426xPwBK3gxDjtfR-uebHhuZacsllsjrqBoKkJdDYVsJLgY4WTYKPUg1Gc9hXCYATCDnX-cQbMHVktk94fjQz6mloZiwWMkPuneJSIpmFCZc_u0WENl2WIWWCyHw.jpg?r=150);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRwxT9I521rDI4RqjqDrAqjUP0SQVWbjNscX5uF6d7e2hXiSW69cCrUmeemJkVaFHgou6dlvLk2dcKfcO_s9bWoKwegztMX01-rsYcpK6XqkkzMR8GLf2iaGaMtRLA.jpg?r=910);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbOVHJwMJj1sLxTRfrIZzV1DzySby4Lsut30pL5A6_g9OTmyZk9EJH6q56HEulK17bFL84iVf3tT45cpW3heWoEaYQR_bI-2UQYAZ28t3LaxXesuwkSOrXdk3KwpTA.jpg?r=79c);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf4TQWfwpqYnZwlXiiF1MQmK5Qdt2Dgfx_rjxF1_eNhgCmSh2Jj8N7jMoDybLUvWZOIKnDpptBFxsKfsKAfmvmM9PILnnfG1tVIXy0vCYS10W9z13Z_e8vMwA1d6RA.jpg?r=ac9);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABacFAGVh_GQMrvpsEwstMJiaPYBscw_ETOzJwlnf6tW8KYqPMQeC4SOmvlEBrIos7Zy0zyCgvD2ic6UJ0tx6R3xMCWNTut2021DaLV7pBC5HR9E5oGaqHPukW3zNkw.jpg?r=158);"></div>
+        <div class="shows" style="background-image: url(https://occ-0-2991-2164.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYbETRcW6qKsMVHf_zgbLlhx8giFzCURJisHa_BdRFln4PhqKQ2gz72LHy8WMaCdF2bhGLD1OGfl7CjoSm-Q3BoRapLsHQOCskUey7Q4cPUC7BO_Y-7tb9wPxAp6jQ.jpg?r=629);"></div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <p>Questions? Call 1-000-123-1234</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">FlickrTv Originals</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Songs -->
+    <audio src="soundtrack/1.mp3" id="soundtrack-1" style="display: none;"></audio>
+    <audio src="soundtrack/2.mp3" id="soundtrack-2" style="display: none;"></audio>
+    <audio src="soundtrack/3.mp3" id="soundtrack-3" style="display: none;"></audio>
+    <audio src="soundtrack/4.mp3" id="soundtrack-4" style="display: none;"></audio>
+
+    <!-- Js -->
+    <script src="card.js"></script>
+
+</body>
+</html>
